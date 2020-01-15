@@ -20,7 +20,5 @@ public struct ArticleList: Codable {
         self.totalResults = totalResults
         self.articles = articles
     }
-
-
 }
 

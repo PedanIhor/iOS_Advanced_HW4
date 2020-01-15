@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D46455723B26D0E00F8F7CB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 6D46455623B26D0E00F8F7CB /* SwiftUICharts */; };
+		6D46455923B26E9600F8F7CB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46455823B26E9600F8F7CB /* ChartView.swift */; };
+		6D46455C23B3BA6500F8F7CB /* RepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46455B23B3BA6500F8F7CB /* RepositoriesService.swift */; };
+		6D46455E23B3E53D00F8F7CB /* ArticlesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46455D23B3E53D00F8F7CB /* ArticlesService.swift */; };
+		6D88241D23CF2D560049C576 /* OverlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88241C23CF2D560049C576 /* OverlayCoordinator.swift */; };
+		6D88241F23CF2ED60049C576 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88241E23CF2ED60049C576 /* SummaryView.swift */; };
+		6DA226B323CDC1A8009E3C3A /* Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA226B223CDC1A8009E3C3A /* Histogram.swift */; };
 		6DABE39523B23EB4009EC65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABE39423B23EB4009EC65B /* AppDelegate.swift */; };
 		6DABE39723B23EB4009EC65B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABE39623B23EB4009EC65B /* SceneDelegate.swift */; };
 		6DABE39923B23EB4009EC65B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABE39823B23EB4009EC65B /* MainView.swift */; };
@@ -15,11 +22,16 @@
 		6DABE3A123B23EB8009EC65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DABE39F23B23EB8009EC65B /* LaunchScreen.storyboard */; };
 		6DABE3CF23B24C35009EC65B /* GitHubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6DABE3CE23B24C35009EC65B /* GitHubAPI */; };
 		6DABE3D223B25293009EC65B /* News in Frameworks */ = {isa = PBXBuildFile; productRef = 6DABE3D123B25293009EC65B /* News */; };
-		6DABE3D523B25C4E009EC65B /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABE3D423B25C4E009EC65B /* SegmentedControl.swift */; };
 		6DABE3D723B25C76009EC65B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABE3D623B25C76009EC65B /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D46455823B26E9600F8F7CB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		6D46455B23B3BA6500F8F7CB /* RepositoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesService.swift; sourceTree = "<group>"; };
+		6D46455D23B3E53D00F8F7CB /* ArticlesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesService.swift; sourceTree = "<group>"; };
+		6D88241C23CF2D560049C576 /* OverlayCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayCoordinator.swift; sourceTree = "<group>"; };
+		6D88241E23CF2ED60049C576 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		6DA226B223CDC1A8009E3C3A /* Histogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
 		6DABE39123B23EB4009EC65B /* Diagrams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diagrams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DABE39423B23EB4009EC65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DABE39623B23EB4009EC65B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +42,6 @@
 		6DABE3A223B23EB8009EC65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DABE3CD23B24B8B009EC65B /* GitHubApi */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitHubApi; sourceTree = SOURCE_ROOT; };
 		6DABE3D023B25287009EC65B /* NewsApi */ = {isa = PBXFileReference; lastKnownFileType = text; path = NewsApi; sourceTree = SOURCE_ROOT; };
-		6DABE3D423B25C4E009EC65B /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		6DABE3D623B25C76009EC65B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D46455723B26D0E00F8F7CB /* SwiftUICharts in Frameworks */,
 				6DABE3CF23B24C35009EC65B /* GitHubAPI in Frameworks */,
 				6DABE3D223B25293009EC65B /* News in Frameworks */,
 			);
@@ -47,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D46455A23B3B9D200F8F7CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6D46455B23B3BA6500F8F7CB /* RepositoriesService.swift */,
+				6D46455D23B3E53D00F8F7CB /* ArticlesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		6DABE38823B23EB4009EC65B = {
 			isa = PBXGroup;
 			children = (
@@ -69,11 +90,15 @@
 			children = (
 				6DABE3D023B25287009EC65B /* NewsApi */,
 				6DABE3CD23B24B8B009EC65B /* GitHubApi */,
-				6DABE3D323B25C37009EC65B /* UIKit */,
+				6D46455A23B3B9D200F8F7CB /* Services */,
 				6DABE39423B23EB4009EC65B /* AppDelegate.swift */,
 				6DABE39623B23EB4009EC65B /* SceneDelegate.swift */,
 				6DABE3D623B25C76009EC65B /* MainViewModel.swift */,
 				6DABE39823B23EB4009EC65B /* MainView.swift */,
+				6D46455823B26E9600F8F7CB /* ChartView.swift */,
+				6D88241E23CF2ED60049C576 /* SummaryView.swift */,
+				6D88241C23CF2D560049C576 /* OverlayCoordinator.swift */,
+				6DA226B223CDC1A8009E3C3A /* Histogram.swift */,
 				6DABE39A23B23EB8009EC65B /* Assets.xcassets */,
 				6DABE39F23B23EB8009EC65B /* LaunchScreen.storyboard */,
 				6DABE3A223B23EB8009EC65B /* Info.plist */,
@@ -97,14 +122,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6DABE3D323B25C37009EC65B /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				6DABE3D423B25C4E009EC65B /* SegmentedControl.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +141,7 @@
 			packageProductDependencies = (
 				6DABE3CE23B24C35009EC65B /* GitHubAPI */,
 				6DABE3D123B25293009EC65B /* News */,
+				6D46455623B26D0E00F8F7CB /* SwiftUICharts */,
 			);
 			productName = Diagrams;
 			productReference = 6DABE39123B23EB4009EC65B /* Diagrams.app */;
@@ -153,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 6DABE38823B23EB4009EC65B;
+			packageReferences = (
+				6D46455523B26D0E00F8F7CB /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 6DABE39223B23EB4009EC65B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,11 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA226B323CDC1A8009E3C3A /* Histogram.swift in Sources */,
 				6DABE3D723B25C76009EC65B /* MainViewModel.swift in Sources */,
+				6D46455E23B3E53D00F8F7CB /* ArticlesService.swift in Sources */,
+				6D88241D23CF2D560049C576 /* OverlayCoordinator.swift in Sources */,
+				6D46455C23B3BA6500F8F7CB /* RepositoriesService.swift in Sources */,
 				6DABE39523B23EB4009EC65B /* AppDelegate.swift in Sources */,
 				6DABE39723B23EB4009EC65B /* SceneDelegate.swift in Sources */,
-				6DABE3D523B25C4E009EC65B /* SegmentedControl.swift in Sources */,
+				6D88241F23CF2ED60049C576 /* SummaryView.swift in Sources */,
 				6DABE39923B23EB4009EC65B /* MainView.swift in Sources */,
+				6D46455923B26E9600F8F7CB /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +405,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		6D46455523B26D0E00F8F7CB /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		6D46455623B26D0E00F8F7CB /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D46455523B26D0E00F8F7CB /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		6DABE3CE23B24C35009EC65B /* GitHubAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GitHubAPI;
