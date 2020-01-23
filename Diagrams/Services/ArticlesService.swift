@@ -25,9 +25,14 @@ struct ArticlesStatistics {
   var array: [Int] { [apple, bitcoin, nginx] }
 }
 
-class ArticlesService: ArticlesServiceInput {
+final class ArticlesService: ArticlesServiceInput {
   
   private let apiKey = "a9b0a70b40c7497fae2f6cff41567103"
+  private lazy var currentDate: String = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter.string(from: Date())
+  }()
   
   func countArticlesStatistics(handler: @escaping (ArticlesStatistics) -> Void) {
     let group = DispatchGroup()
@@ -36,7 +41,7 @@ class ArticlesService: ArticlesServiceInput {
     var nginxCount: Int = 0
 
     group.enter()
-    ArticlesAPI.everythingGet(q: "apple", from: "2020-01-01", sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
+    ArticlesAPI.everythingGet(q: "apple", from: currentDate, sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
       if list != nil {
         appleCount = list!.totalResults ?? 0
       } else if error != nil {
@@ -48,7 +53,7 @@ class ArticlesService: ArticlesServiceInput {
     }
 
     group.enter()
-    ArticlesAPI.everythingGet(q: "bitcoin", from: "2020-01-01", sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
+    ArticlesAPI.everythingGet(q: "bitcoin", from: currentDate, sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
       if list != nil {
         bitcoinCount = list!.totalResults ?? 0
       } else if error != nil {
@@ -60,7 +65,7 @@ class ArticlesService: ArticlesServiceInput {
     }
 
     group.enter()
-    ArticlesAPI.everythingGet(q: "nginx", from: "2020-01-01", sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
+    ArticlesAPI.everythingGet(q: "nginx", from: currentDate, sortBy: "publishedAt", apiKey: apiKey) { (list, error) in
       if list != nil {
         nginxCount = list!.totalResults ?? 0
       } else if error != nil {

@@ -19,11 +19,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     
+    let repoService: RepositoriesServiceInput = RepositoriesService()
+    let newsService: ArticlesServiceInput = ArticlesService()
+    
+    let locator = ServiceLocator.shared
+    locator.addService(repoService)
+    locator.addService(newsService)
+    
     // Use a UIHostingController as window root view controller.
     if let windowScene = scene as? UIWindowScene {
       let coordinator = OverlayCoordinator.shared
-      let viewModel = MainViewModel(repositoriesService: RepositoriesService(),
-                                    articlesService: ArticlesService())
+      let viewModel = MainViewModel(repositoriesService: locator.getServiceOf(RepositoriesServiceInput.self)!,
+                                    articlesService: locator.getServiceOf(ArticlesServiceInput.self)!)
       let contentView = MainView().environmentObject(viewModel)
       let window = UIWindow(windowScene: windowScene)
       window.rootViewController = UIHostingController(rootView: contentView)
@@ -37,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       overlayVC.view.backgroundColor = .clear
       summaryWindow.windowLevel = .alert + 1
       coordinator.overlayWindow = summaryWindow
-    }    
+    }
   }
 }
 
